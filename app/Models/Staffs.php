@@ -9,4 +9,16 @@ class Staffs extends Model
 {
     use HasFactory;
     protected $fillable = ['name', 'position', 'description', 'image'];
+
+    // create attribute to clean date formate
+    public function getCreatedAtAttribute($value){
+
+        return date('D M Y', strtotime($value));
+    }
+    // create attribute to clean date formate
+    public function getUpdatedAtAttribute($value){
+
+    return date('D M Y', strtotime($value));
+    
+    }
 }
