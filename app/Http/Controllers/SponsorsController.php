@@ -16,7 +16,7 @@ class SponsorsController extends Controller
         $sponsors = Sponsors::all();
         return response()->json([
             'status'=> 'Get Sponsors successfully',
-            'Staff' => $sponsors
+            'Sponsors' => $sponsors
         ]);
     }
 
