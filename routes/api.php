@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SponsorsController;
 use App\Http\Controllers\StaffsController;
+use App\Http\Controllers\TeamController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -24,3 +25,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('/staffs', StaffsController::class);
 Route::apiResource('/sponsors', SponsorsController::class);
 Route::apiResource('/projects', ProjectController::class);
+Route::apiResource('/teams', TeamController::class);
