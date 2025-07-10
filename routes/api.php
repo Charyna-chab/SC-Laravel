@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\GiftController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\SponsorsController;
 use App\Http\Controllers\StaffsController;
@@ -33,3 +34,4 @@ Route::apiResource('/sponsors', SponsorsController::class);
 Route::apiResource('/projects', ProjectController::class);
 Route::apiResource('/teams', TeamController::class);
 Route::apiResource('/volunteers', VolunteerProfileController::class);
+Route::apiResource('/gifts', GiftController::class);
