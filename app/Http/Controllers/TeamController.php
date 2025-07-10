@@ -71,7 +71,7 @@ class TeamController extends Controller
     {
         $team = Team::find($id);
 
-        dd($request->file('image'));
+        // dd($request->file('image'));
 
         if (!$team) {
             return response()->json([
